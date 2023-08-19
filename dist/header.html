@@ -1,0 +1,41 @@
+<div class="p-4">
+    <nav class="mx-4 md:mx-8 my-6 bg-white bg-opacity-10 rounded-lg p-4 backdrop-blur-md shadow-lg">
+        <!-- Main Navigation -->
+        <div class="flex justify-between items-center">
+            <!-- Brand Logo/Name -->
+            <a href="#" class="text-2xl font-bold text-white">3Lines</a>
+
+            <!-- Navigation Links for Desktop -->
+            <div id="desktopMenuLinks" class="hidden md:flex space-x-4">
+                <a href="#aboutUs" class="text-white hover:text-gray-300">About Us</a>
+                <a href="#features" class="text-white hover:text-gray-300">Features</a>
+                <a href="#contact" class="text-white hover:text-gray-300">Contact</a>
+            </div>
+
+            <!-- Responsive Menu Toggle -->
+            <button id="menuToggle" class="md:hidden p-2 focus:outline-none focus:bg-opacity-20 text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+        </div>
+
+        <!-- Mobile Navigation Links -->
+        <div id="mobileMenuLinks" class="hidden mt-4 md:hidden space-y-2">
+            <a href="#aboutUs" class="text-white hover:text-gray-300 block">About Us</a>
+            <a href="#features" class="text-white hover:text-gray-300 block">Features</a>
+            <a href="#contact" class="text-white hover:text-gray-300 block">Contact</a>
+        </div>
+    </nav>
+</div>
+
+<!-- JavaScript for responsive toggle -->
+<script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenuLinks = document.getElementById('mobileMenuLinks');
+
+    menuToggle.addEventListener('click', () => {
+        mobileMenuLinks.classList.toggle('hidden');
+    });
+</script>
